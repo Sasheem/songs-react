@@ -1,8 +1,22 @@
 import React from 'react';
-import actions from '../actions';
+import SongList from './SongList';
 
 const App = () => {
-    return <h1>App</h1>;
+    return (
+        <div className="ui container grid">
+            <div className="ui row">
+                <div className="column 12 wide">
+                    <h1>App Component</h1>
+                </div>
+            </div>
+            <div className="ui row">
+                <div className="column eight wide">
+                        <SongList />
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default App;
+
