@@ -23,10 +23,9 @@ class ClassList extends React.Component {
         });
     }
     render() {
-        console.log(this.props);
         return (
             <div className="ui divided list">
-                <h2>SongList Component</h2>
+                <h2>Your Songs</h2>
                 {this.renderList()}
             </div>
             
@@ -36,7 +35,6 @@ class ClassList extends React.Component {
 
 // state passed in of our redux store
 const mapStateToProps = (state) => {
-    console.log(state);
     // take the data in our store, 
     // run some computation on it
     // eventually shows up as props to inside of our component
